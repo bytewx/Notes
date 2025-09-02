@@ -15,3 +15,7 @@ func findUser(ctx context.Context, id int64) (User, error) {
   return u, nil
 }
 ```
+- Guidelines:
+- Return error as the last value; never panic in libraries.
+- Wrap errors with %w; check with errors.Is/As.
+- Export stable sentinel/typed errors only when they’re part of your contract.
