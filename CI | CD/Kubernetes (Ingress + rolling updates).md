@@ -48,3 +48,6 @@ spec:
             backend:
               service: { name: web, port: { number: 8080 } }
 ```
+- GitLab CI to k8s (sketch):
+- authenticate with a CI variable KUBECONFIG (or use GitLab’s agent),
+- kubectl set image deploy/web web=... && kubectl rollout status deploy/web.
