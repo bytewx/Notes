@@ -15,6 +15,8 @@ sudo tar -C /usr/local -xzf go1.23.1.linux-amd64.tar.gz
 - Add Go to `PATH` (add lines to ~/.bashrc or ~/.zshrc):
 ```
 export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 ```
 - Then accept the changes:
 ```
