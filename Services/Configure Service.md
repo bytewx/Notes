@@ -33,3 +33,7 @@ sudo ln -s /etc/nginx/sites-available/news.conf /etc/nginx/sites-enabled/
 sudo nginx -t
 sudo systemctl reload nginx
 ```
+- Disable nginx's version display:
+```
+server_tokens off;
+```
