@@ -10,3 +10,11 @@ else
     echo "$(date) Go service is up" >> /var/log/service-health.log
 fi
 ```
+- Make it executable:
+```
+sudo chmod +x /usr/local/bin/check_news.sh
+```
+- Make checking every two minutes:
+```
+*/2 * * * * /usr/local/bin/check_news.sh
+```
