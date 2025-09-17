@@ -12,9 +12,9 @@ fi
 ```
 - Make it executable:
 ```
-sudo chmod +x /usr/local/bin/check_news.sh
+sudo chmod +x /usr/local/bin/check_service.sh
 ```
 - Make checking every two minutes:
 ```
-*/2 * * * * /usr/local/bin/check_news.sh
+*/2 * * * * /usr/local/bin/check_service.sh
 ```
